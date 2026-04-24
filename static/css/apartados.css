@@ -5,12 +5,9 @@
 }
 
 body {
-    font-family: "IBM Plex Serif", serif;
-    background: linear-gradient(135deg, #ffe4ec, #f8d7ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    padding: 40px;
 }
 
 h1 {
@@ -47,9 +44,15 @@ img {
     cursor: pointer;
     font-size: 0.95rem;
     transition: 0.3s ease;
+    margin: 20px auto;
+    
 }
 
 .button_nav:hover {
     background: #e13c70;
     transform: scale(1.05);
+}
+.final {
+    display: flex;
+    justify-content: center;
 }
