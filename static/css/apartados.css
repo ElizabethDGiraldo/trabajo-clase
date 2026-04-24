@@ -5,9 +5,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
-    padding: 40px;
+    font-family: "IBM Plex Serif", serif;
+    background: linear-gradient(135deg, #ffe4ec, #f8d7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -34,4 +37,19 @@ img {
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+.button_nav {
+    background: #ff4f87;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.button_nav:hover {
+    background: #e13c70;
+    transform: scale(1.05);
 }
