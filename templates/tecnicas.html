@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block titulo %}tecnica — Mi Web{% endblock %}
+
+{% block hero %}{% endblock %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{{ url_for('static', path='css/apartados.css') }}">
+
+<nav class="barra_sub">
+    <a href="/materiales"><button class="button_nav">Materiales</button></a>
+    <a href="/salubridad"><button class="button_nav">Salubridad</button></a>
+    <a href="/tecnicas"><button class="button_nav">Tecnicas</button></a>
+</nav>
+
+
+<a href="/"><button class="button_nav">⬅ Volver al inicio</button></a>
+
+<h1>Tecnicas que debes aplicar para una perfecta aplicación 😼</h1>
+
+<p>
+    Sellado de borde libre: Pasa el pincel horizontalmente por el borde de la punta de la uña en cada capa. Esto evita que el esmalte se levante o se "encoja".<br><br>
+
+    La Regla de los 3 trazos: Deposita una gota cerca de la cutícula, empújala suavemente hacia atrás (sin tocar la piel) y desliza hacia el centro, luego un trazo a la izquierda y uno a la derecha.<br><br>
+
+    Capas delgadas: Es mejor aplicar dos capas finas que una gruesa. Si la capa es muy gorda, el esmalte se arruga o se desprende rápido.<br><br>
+
+    Control del pincel: Mantén el pincel a un ángulo de 45°. Si lo aplanas mucho, barres el color; si lo pones muy vertical, dejas surcos.<br><br>
+
+    Limpieza inmediata: Si llegas a tocar la piel, limpia el exceso con un palito de naranjo antes de meter la mano a la lámpara. Una vez seco, es mucho más difícil de quitar.
+</p>
+
+<div class="final">
+    <img src="../static/imagenes/tecnica.webp" alt="uñas">
+</div>
+
+
+{% endblock %}

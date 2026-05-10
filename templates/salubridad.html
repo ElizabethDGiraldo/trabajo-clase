@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block titulo %}salubridad — Mi Web{% endblock %}
+
+{% block hero %}{% endblock %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{{ url_for('static', path='css/apartados.css') }}">
+
+<nav class="barra_sub">
+    <a href="/materiales"><button class="button_nav">Materiales</button></a>
+    <a href="/salubridad"><button class="button_nav">Salubridad</button></a>
+    <a href="/tecnicas"><button class="button_nav">Tecnicas</button></a>
+</nav>
+
+
+<a href="/"><button class="button_nav">⬅ Volver al inicio</button></a>
+
+<h1>Salubridad para la manicura en casa ❤️‍🩹</h1>
+
+<p>
+    Desinfección de herramientas: Limpia tus limas, empujadores y pinceles con alcohol al 70% antes y después de cada uso.<br><br>
+
+    Higiene de manos: Lava bien tus manos (o las de tu modelo) y aplica un sanitizante para evitar infecciones bajo el producto.<br><br>
+
+    No compartir limas: Las limas de cartón son porosas y acumulan bacterias; lo ideal es que cada persona tenga la suya.
+</p>
+
+<div class="final">
+    <img src="../static/imagenes/salubridad.webp" alt="uñas">
+</div>
+
+{% endblock %}
