@@ -7,11 +7,13 @@
 body {
     font-family: "IBM Plex Serif", serif;
     background: linear-gradient(135deg, #ffe4ec, #f8d7ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .container {
     background: white;
@@ -21,6 +23,7 @@ body {
     width: 90%;
     max-width: 600px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 40px auto;
 }
 
 h1 {
@@ -44,6 +47,10 @@ h2 {
     flex-wrap: wrap;
 }
 
+.barra a {
+    text-decoration: none;
+}
+
 .button_nav {
     background: #ff4f87;
     color: white;
@@ -53,7 +60,6 @@ h2 {
     cursor: pointer;
     font-size: 0.95rem;
     transition: 0.3s ease;
-   
 }
 
 .button_nav:hover {
@@ -65,6 +71,19 @@ img {
     width: 100%;
     max-width: 300px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
